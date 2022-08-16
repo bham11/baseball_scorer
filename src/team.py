@@ -18,11 +18,11 @@ class Team:
 
     def add_player_to_lineup(self, loc: int, player: Player):
         if loc <= 9:
-                self._lineup[loc] = player
+            self._lineup[loc] = player
         else:
             pass
 
-    def make_sub(self, player_to_sub:Player, player_coming_out:Player):
+    def make_sub(self, player_to_sub: Player, player_coming_out: Player):
+        batting_spot = self._lineup.index(player_coming_out)
         if player_coming_out.get_position() == player_to_sub.get_position():
-            self._lineup = [player_to_sub if item == player_coming_out
-                            else item for item in self._lineup]
+            self._lineup[batting_spot] = player_to_sub

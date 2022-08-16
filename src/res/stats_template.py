@@ -22,3 +22,8 @@ BATTER = {
     "HR": 0,
     "E": 0,
 }
+
+SCOREBOARD = {
+            "home": 0,
+            "away": 0
+        }
