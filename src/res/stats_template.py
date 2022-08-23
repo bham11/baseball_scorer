@@ -27,3 +27,5 @@ SCOREBOARD = {
             "home": 0,
             "away": 0
         }
+
+OUTS = ["K", "P1", "P2", "P3", "P4", "P5" "P6", "F7", "F8", "F9", "3U"]

@@ -17,9 +17,9 @@ class Player:
         self._number = number
         self._position = position
         if self._position == "pitcher":
-            base_stats = PITCHER
+            base_stats = PITCHER.copy()
         else:
-            base_stats = BATTER
+            base_stats = BATTER.copy()
         self.stats = base_stats
 
     def get_name(self):

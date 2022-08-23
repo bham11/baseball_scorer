@@ -7,5 +7,5 @@ class Game:
     def __init__(self, home: Team, away: Team):
         self._home = home
         self._away = away
-        self._score = SCOREBOARD
-        self._innings = [Inning(x) for x in range(1, 9)]
+        self._score = SCOREBOARD.copy()
+        self._innings = [Inning(x, self._away, self._home) for x in range(1, 9)]
