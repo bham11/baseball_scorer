@@ -1,4 +1,4 @@
-from src.res.stats_template import PITCHER, BATTER
+from src.res.stats_template import PITCHER, BATTER, POSITIONS
 
 
 class Player:
@@ -15,8 +15,11 @@ class Player:
         """
         self._name = name
         self._number = number
-        self._position = position
-        if self._position == "pitcher":
+        if position in POSITIONS:
+            self._position = position
+        else:
+            raise ValueError("Illegal position")
+        if self._position in ["SP", "RP", "CP" ] :
             base_stats = PITCHER.copy()
         else:
             base_stats = BATTER.copy()

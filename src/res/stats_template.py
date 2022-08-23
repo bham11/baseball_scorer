@@ -29,3 +29,18 @@ SCOREBOARD = {
         }
 
 OUTS = ["K", "P1", "P2", "P3", "P4", "P5" "P6", "F7", "F8", "F9", "3U"]
+
+POSITIONS = [
+    "SP",
+    "RP",
+    "CP",
+    "C",
+    "1B",
+    "2B",
+    "3B",
+    "SS",
+    "LF",
+    "CF",
+    "RF",
+    "DH"
+]
